@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;700&display=swap");
+
+/* ---------- Variables ---------- */
+:root {
+  --oceano: #0b4f5c;
+  --oceano-oscuro: #08373f;
+  --tinta: #10262a;
+  --neblina: #eef4f2;
+  --blanco: #ffffff;
+  --linea: #c9d9d6;
+  --sol: #f4b41a;
+  --sol-oscuro: #dc9d0a;
+
+  /* Las cuatro regiones del país */
+ 
+  --costa: #f4b41a;
+  --sierra: #1b1ed9;
+  --selva: #f30303;
+  --galapagos: #fbfbfb;
+
+  --fuente-titulo: "Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
+  --fuente-texto: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--fuente-texto);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--tinta);
+  background: var(--neblina);
+}
+
+h1,
+h2 {
+  font-family: var(--fuente-titulo);
+  line-height: 1.1;
+  margin: 0 0 1rem;
+}
+
+p {
+  margin: 0 0 1rem;
+  max-width: 60ch;
+}
+
+:focus-visible {
+  outline: 3px solid var(--sol);
+  outline-offset: 2px;
+}
+
+/* ---------- Encabezado ---------- */
+header {
+  position: relative;
+  background: var(--oceano);
+  color: var(--blanco);
+  padding: 2.5rem 1.25rem 2.75rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(2.25rem, 7vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* Franja de las cuatro regiones: costa, sierra, selva y Galápagos */
+header::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 8px;
+  background: linear-gradient(
+    to right,
+    var(--costa) 0 35%,
+    var(--sierra) 35% 70%,
+    var(--selva) 70% 100%,
+    var(--galapagos) 75% 100%
+  );
+}
+
+/* ---------- Navegación ---------- */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--blanco);
+  border-bottom: 1px solid var(--linea);
+  padding: 0 1rem;
+}
+
+nav a {
+  padding: 0.9rem 1rem;
+  color: var(--tinta);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  color: var(--oceano);
+  border-bottom-color: var(--sol);
+}
+
+/* ---------- Secciones ---------- */
+.contenedor {
+  max-width: 960px;
+  margin-inline: auto;
+  padding: 3rem 1.25rem;
+  scroll-margin-top: 3.5rem;
+}
+
+.contenedor h2 {
+  font-size: clamp(1.6rem, 4vw, 2.25rem);
+  color: var(--oceano);
+}
+
+#inicio {
+  padding-block: 4.5rem 2.5rem;
+}
+
+#inicio h2 {
+  font-size: clamp(2.25rem, 8vw, 4.25rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--oceano-oscuro);
+}
+
+#inicio p {
+  font-size: 1.25rem;
+}
+
+/* ---------- Tabla de destinos ---------- */
+.tabla-datos {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  background: var(--blanco);
+  border: 1px solid var(--linea);
+  border-radius: 8px;
+}
+
+.tabla-datos th,
+.tabla-datos td {
+  padding: 0.9rem 1.1rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.tabla-datos thead th {
+  font-weight: 700;
+  border-bottom: 2px solid var(--oceano);
+}
+
+.tabla-datos tbody td {
+  border-bottom: 1px solid var(--linea);
+}
+
+.tabla-datos tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.tabla-datos tbody tr:hover {
+  background: var(--neblina);
+}
+
+.tabla-datos td:first-child {
+  font-weight: 700;
+}
+
+/* El precio se alinea a la derecha para comparar cifras */
+.tabla-datos th:last-child,
+.tabla-datos td:last-child {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+/* ---------- Formulario ---------- */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 520px;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font: inherit;
+  color: var(--tinta);
+  background: var(--blanco);
+  border: 1px solid var(--linea);
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+.formulario input:hover,
+.formulario textarea:hover {
+  border-color: var(--oceano);
+}
+
+.formulario textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.formulario button {
+  align-self: flex-start;
+  padding: 0.8rem 1.75rem;
+  font: inherit;
+  font-weight: 700;
+  color: var(--tinta);
+  background: var(--sol);
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.formulario button:hover {
+  background: var(--sol-oscuro);
+}
+
+.formulario button:active {
+  transform: translateY(1px);
+}
+
+/* ---------- Pie de página ---------- */
+footer {
+  margin-top: 2rem;
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+  color: #d5e4e1;
+  background: var(--oceano-oscuro);
+}
+
+footer p {
+  margin: 0 auto;
+}
+
+/* ---------- Móvil ---------- */
+@media (max-width: 480px) {
+  nav {
+    gap: 0;
+  }
+
+  nav a {
+    padding-inline: 0.7rem;
+  }
+
+  .contenedor {
+    padding-block: 2rem;
+  }
+
+  .formulario button {
+    align-self: stretch;
+  }
+}
