@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viaja Ecuador</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+  <header>
+    <h1>Viaja Ecuador</h1>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#destinos">Destinos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <section id="inicio" class="contenedor">
+      <h2>Descubre el país</h2>
+      <p>Playa, sierra, selva y Galápagos en un solo lugar.</p>
+    </section>
+
+    <section id="destinos" class="contenedor">
+      <h2>Destinos</h2>
+      <table class="tabla-datos">
+        <thead>
+          <tr>
+            <th>Destino</th>
+            <th>Región</th>
+            <th>Duración</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Galápagos</td><td>Insular</td><td>5 días</td><td>$1200</td></tr>
+          <tr><td>Baños</td><td>Sierra</td><td>2 días</td><td>$150</td></tr>
+          <tr><td>Cuenca</td><td>Sierra</td><td>3 días</td><td>$220</td></tr>
+          <tr><td>Mindo</td><td>Subtrópico</td><td>1 día</td><td>$60</td></tr>
+          <tr><td>Montañita</td><td>Costa</td><td>3 días</td><td>$180</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contacto" class="contenedor">
+      <h2>Contáctanos</h2>
+      <form class="formulario">
+        <input type="text" placeholder="Tu nombre">
+        <textarea placeholder="Tu mensaje"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Viaja Ecuador</p>
+  </footer>
+
 </body>
 </html>
