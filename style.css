@@ -328,4 +328,18 @@ footer p {
   .formulario button {
     align-self: stretch;
   }
+  @media (max-width: 600px) {
+    .formulario {
+        width: 100%;
+    }
+
+    .tabla-datos {
+        font-size: 14px;
+    }
+
+    .tabla-datos th,
+    .tabla-datos td {
+        padding: 6px;
+    }
+}
 }
