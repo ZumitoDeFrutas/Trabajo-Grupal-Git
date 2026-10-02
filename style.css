@@ -156,10 +156,16 @@ nav a:hover {
 
 /* ---------- Tabla de destinos ---------- */
 .tabla-datos {
+<<<<<<< HEAD
   display: block;
   width: 100%;
   overflow-x: auto;
   border-collapse: collapse;
+=======
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+>>>>>>> origin/Byron
   background: var(--blanco);
   border: 1px solid var(--linea);
   border-radius: 8px;
@@ -201,6 +207,45 @@ nav a:hover {
   font-weight: 700;
 }
 
+<<<<<<< HEAD
+=======
+/* ---------- Galería ---------- */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.galeria .galeria-item {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--oceano);
+}
+
+.galeria .galeria-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.galeria .galeria-item span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+}
+
+>>>>>>> origin/Byron
 /* ---------- Formulario ---------- */
 .formulario {
   display: flex;

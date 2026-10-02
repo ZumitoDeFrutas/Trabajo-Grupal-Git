@@ -7,8 +7,8 @@ para la evaluación de Git + GitHub con HTML5 y CSS3.
 
 | Estudiante | Rol | Rama |
 |---|---|---|
-| Nombre A | HTML (estructura y tabla) | `dev/estudiante-a` |
-| Nombre B | CSS (estilos) | `dev/estudiante-b` |
+| Byron | HTML (estructura y tabla) | `Byron` |
+| Bryan | CSS (estilos) | `bryan` |
 
 ## Tecnologías
 
@@ -20,12 +20,12 @@ para la evaluación de Git + GitHub con HTML5 y CSS3.
 
 1. Clonar el repositorio:
 ```bash
-   git clone <url-del-repositorio>
+   git clone <https://github.com/ZumitoDeFrutas/Trabajo-Grupal-Git.git>
 ```
 2. Entrar a la carpeta del proyecto:
 ```bash
-   cd nombre-del-repo
+   cd Proyecto Final Git
 ```
-3. Abrir `index.html` en el navegador (doble clic o con la extensión Live Server).
+3. Abrir `index.html` en el navegador.
 
 ## Estructura de archivos

@@ -1,63 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viaja Ecuador</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaja Ecuador</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>Viaja Ecuador</h1>
-  </header>
+    <header>
+        <h1>Viaja Ecuador</h1>
+    </header>
 
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#destinos">Destinos</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#destinos">Destinos</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
 
-  <main>
-    <section id="inicio" class="contenedor">
-      <h2>Descubre el país</h2>
-      <p>Playa, sierra, selva y Galápagos en un solo lugar.</p>
-    </section>
+    <main>
+        <section id="inicio" class="contenedor">
+            <h2>Descubre el país</h2>
+            <p>Playa, sierra, selva y Galápagos en un solo lugar.</p>
+        </section>
 
-    <section id="destinos" class="contenedor">
-      <h2>Destinos</h2>
-      <table class="tabla-datos">
-        <thead>
-          <tr>
-            <th>Destino</th>
-            <th>Región</th>
-            <th>Duración</th>
-            <th>Precio</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Galápagos</td><td>Insular</td><td>5 días</td><td>$1200</td></tr>
-          <tr><td>Baños</td><td>Sierra</td><td>2 días</td><td>$150</td></tr>
-          <tr><td>Cuenca</td><td>Sierra</td><td>3 días</td><td>$220</td></tr>
-          <tr><td>Mindo</td><td>Subtrópico</td><td>1 día</td><td>$60</td></tr>
-          <tr><td>Montañita</td><td>Costa</td><td>3 días</td><td>$180</td></tr>
-        </tbody>
-      </table>
-    </section>
+        <section id="destinos" class="contenedor">
+            <h2>Destinos</h2>
+            <table class="tabla-datos">
+                <thead>
+                    <tr>
+                        <th>Destino</th>
+                        <th>Región</th>
+                        <th>Duración</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Galápagos</td>
+                        <td>Insular</td>
+                        <td>5 días</td>
+                        <td>$1200</td>
+                    </tr>
+                    <tr>
+                        <td>Baños</td>
+                        <td>Sierra</td>
+                        <td>2 días</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>Cuenca</td>
+                        <td>Sierra</td>
+                        <td>3 días</td>
+                        <td>$220</td>
+                    </tr>
+                    <tr>
+                        <td>Mindo</td>
+                        <td>Subtrópico</td>
+                        <td>1 día</td>
+                        <td>$60</td>
+                    </tr>
+                    <tr>
+                        <td>Montañita</td>
+                        <td>Costa</td>
+                        <td>3 días</td>
+                        <td>$180</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <section id="contacto" class="contenedor">
-      <h2>Contáctanos</h2>
-      <form class="formulario">
-        <input type="text" placeholder="Tu nombre">
-        <textarea placeholder="Tu mensaje"></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
+        <section id="galeria" class="contenedor">
+            <h2>Galería</h2>
+            <div class="galeria">
+                <div class="galeria-item">
+                    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Iguana_marina_%28Amblyrhynchus_cristatus%29%2C_Las_Bachas%2C_isla_Santa_Cruz%2C_islas_Gal%C3%A1pagos%2C_Ecuador%2C_2015-07-23%2C_DD_23.jpg/960px-Iguana_marina_%28Amblyrhynchus_cristatus%29%2C_Las_Bachas%2C_isla_Santa_Cruz%2C_islas_Gal%C3%A1pagos%2C_Ecuador%2C_2015-07-23%2C_DD_23.jpg"
+                        alt="Iguana marina en las islas Galápagos">
+                    <span>Galápagos</span>
+                </div>
 
-  <footer>
-    <p>&copy; 2026 Viaja Ecuador</p>
-  </footer>
+                <div class="galeria-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Ecuador_Banos_Cityhall.JPG"
+                        alt="Municipio de Baños de Agua Santa">
+                    <span>Baños</span>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Workers_waiting_for_day_jobs_in_Plaza_San_Francisco%2C_Cuenca%2C_Ecuador.jpg/960px-Workers_waiting_for_day_jobs_in_Plaza_San_Francisco%2C_Cuenca%2C_Ecuador.jpg"
+                        alt="Plaza San Francisco en Cuenca">
+                    <span>Cuenca</span>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Mindo-Cloud-Forest-07.jpg/960px-Mindo-Cloud-Forest-07.jpg"
+                        alt="Bosque nublado de Mindo">
+                    <span>Mindo</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contenedor">
+            <h2>Contáctanos</h2>
+            <form class="formulario">
+                <input type="text" placeholder="Tu nombre">
+                <textarea placeholder="Tu mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Viaja Ecuador</p>
+    </footer>
 
 </body>
+
 </html>
