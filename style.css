@@ -156,10 +156,9 @@ nav a:hover {
 
 /* ---------- Tabla de destinos ---------- */
 .tabla-datos {
-  display: block;
   width: 100%;
-  overflow-x: auto;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   background: var(--blanco);
   border: 1px solid var(--linea);
   border-radius: 8px;
